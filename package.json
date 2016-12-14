@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jasmine",
     "build": "tsc",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "lint": "tslint *.ts spec/**/*.ts"
   },
   "keywords": [
     "Geo::StreetAddress::Canada",
@@ -25,6 +26,7 @@
     "@types/jasmine": "^2.5.38",
     "@types/node": "0.0.3",
     "jasmine": "^2.5.2",
+    "tslint": "^4.0.2",
     "typescript": "^2.1.4"
   },
   "dependencies": {}

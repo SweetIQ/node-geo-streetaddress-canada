@@ -1,4 +1,4 @@
-import { spawn, spawnSync } from 'child_process'
+import { spawn, spawnSync } from 'child_process';
 
 /**
  * Object representing an address
@@ -51,7 +51,7 @@ function foreignSpawn(command: Command, address: string) {
         address,
         ], {
         encoding: 'buffer'
-    })
+    });
 }
 
 /**
@@ -60,11 +60,11 @@ function foreignSpawn(command: Command, address: string) {
  * Mirror of http://search.cpan.org/~timb/Geo-StreetAddress-US-1.04/US.pm#parse_location
  */
 export function parseLocation(address: string): Partial<Specifier> {
-    let ret = foreignSpawn('parseLocation', address)
+    let ret = foreignSpawn('parseLocation', address);
     if (ret.error) {
-        throw new Error(`Failed to parse location\n${ret.stdout}\n${ret.stderr}]`)
+        throw new Error(`Failed to parse location\n${ret.stdout}\n${ret.stderr}]`);
     } else {
-        return JSON.parse((ret.stdout.toString('utf8')))
+        return JSON.parse((ret.stdout.toString('utf8')));
     }
 }
 
@@ -74,11 +74,11 @@ export function parseLocation(address: string): Partial<Specifier> {
  * Mirror of http://search.cpan.org/~timb/Geo-StreetAddress-US-1.04/US.pm#parse_address
  */
 export function parseAddress(address: string): Partial<AddressSpecifier> {
-    let ret = foreignSpawn('parseAddress', address)
+    let ret = foreignSpawn('parseAddress', address);
     if (ret.error) {
-        throw new Error(`Failed to parse address \n${ret.stdout}\n${ret.stderr}]`)
+        throw new Error(`Failed to parse address \n${ret.stdout}\n${ret.stderr}]`);
     } else {
-        return JSON.parse((ret.stdout.toString('utf8')))
+        return JSON.parse((ret.stdout.toString('utf8')));
     }
 }
 
@@ -88,10 +88,10 @@ export function parseAddress(address: string): Partial<AddressSpecifier> {
  * Mirror of http://search.cpan.org/~timb/Geo-StreetAddress-US-1.04/US.pm#parse_informal_address
  */
 export function parseInformalAddress(address: string): Partial<AddressSpecifier> {
-    let ret = foreignSpawn('parseInformalAddress', address)
+    let ret = foreignSpawn('parseInformalAddress', address);
     if (ret.error) {
-        throw new Error(`Failed to parse informal address\n${ret.stdout}\n${ret.stderr}]`)
+        throw new Error(`Failed to parse informal address\n${ret.stdout}\n${ret.stderr}]`);
     } else {
-        return JSON.parse((ret.stdout.toString('utf8')))
+        return JSON.parse((ret.stdout.toString('utf8')));
     }
 }
