@@ -11,7 +11,7 @@ This is a NodeJS wrapper for Perl extension [Geo::StreetAddress::Canada].
 ## Dependencies
 
 - Node.js v6
-- Perl 5
+- Perl 5.24+
 
 ## Usage
 
