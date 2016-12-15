@@ -1,4 +1,8 @@
 #! /usr/bin/perl
+
+# Dpenedencies were bundled using command
+# cpanm --self-contained -L foreign JSON https://cpan.metacpan.org/authors/id/T/TE/TEEDOT/Geo-StreetAddress-Canada-1.04.tar.gz
+
 use strict;
 use lib './foreign/lib/perl5';
 use Geo::StreetAddress::Canada;

@@ -1,0 +1,66 @@
+=head2 Thu Dec 15 15:47:43 2016: C<Module> L<JSON|JSON>
+
+=over 4
+
+=item *
+
+C<installed into: C:\Users\mengx\Source\Repos\NODE-G~2\foreign\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.90>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Thu Dec 15 15:47:55 2016: C<Module> L<Class::Data::Inheritable|Class::Data::Inheritable>
+
+=over 4
+
+=item *
+
+C<installed into: C:\Users\mengx\Source\Repos\NODE-G~2\foreign\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.08>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Thu Dec 15 15:47:58 2016: C<Module> L<Geo::StreetAddress::Canada|Geo::StreetAddress::Canada>
+
+=over 4
+
+=item *
+
+C<installed into: C:\Users\mengx\Source\Repos\NODE-G~2\foreign\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.04>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
