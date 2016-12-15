@@ -1,6 +1,6 @@
 {
   "name": "geo-streetaddress-canada",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node wrapper for perl Geo::StreetAddress::Canada",
   "main": "index.js",
   "scripts": {
