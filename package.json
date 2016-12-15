@@ -20,6 +20,10 @@
     "code",
     "address"
   ],
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/SweetIQ/node-geo-streetaddress-canada.git"
+  },
   "author": "Meng Xuan Xia <mengxuan.xia@outlook.com>",
   "license": "MIT",
   "devDependencies": {
