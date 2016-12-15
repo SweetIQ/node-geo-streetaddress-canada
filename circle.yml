@@ -1,3 +1,8 @@
 machine:
   node:
     version: 6.4.0
+  pre:
+    - curl -L https://install.perlbrew.pl | bash
+    - perlbrew init
+    - perlbrew install 5.24.0
+    - perlbrew switch perl-5.24.0
