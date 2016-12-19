@@ -27,45 +27,44 @@ Use in NodeJS:
 
 var geoStreetAddressCanada = require('geo-streetaddress-Canada')
 
-geoStreetAddressCanada.parseLocation('1005 Gravenstein Hwy N, Sebastopol CA 95272')
+geoStreetAddressCanada.parseLocation('845 Rue Sherbrooke O, Montréal, QC H3A 0G2')
 
 /*
 {
-    suffix: 'N',
-    number: '1005',
-    city: 'Sebastopol',
-    street: 'Gravenstein',
-    state: 'CA',
-    zip: '95272',
-    type: 'Hwy'
+    postalcode: 'H3A 0G4',
+    street: 'Rue Sherbrooke O',
+    city: 'Montral',
+    number: '845',
+    type: '',
+    province: 'QC'
 }
 */
 
-geoStreetAddressCanada.parseAddress('1005 Gravenstein Hwy N, Sebastopol CA 95272')
+
+geoStreetAddressCanada.parseAddress('7141 Rue Sherbrooke O, Montréal, QC H4B 1R2')
 
 /*
 {
-    suffix: 'N',
-    number: '1005',
-    city: 'Sebastopol',
-    street: 'Gravenstein',
-    state: 'CA',
-    zip: '95272',
-    type: 'Hwy'
+    city: 'Montral',
+    type: '',
+    province: 'QC',
+    street: 'Rue Sherbrooke O',
+    number: '7141',
+    postalcode: 'H4B 1R6'
 }
 */
 
-geoStreetAddressCanada.parseInformalAddress('1025 Gravenstein hwy north Sebastopol CA 95272-3092')
+
+geoStreetAddressCanada.parseInformalAddress('2900 Boulevard Edouard-Montpetit, Montréal, QC H3T 1J2')
 
 /*
 {
-    suffix: 'N',
-    number: '1025',
-    city: 'Sebastopol',
-    street: 'Gravenstein',
-    state: 'CA',
-    zip: '95272',
-    type: 'Hwy'
+    number: '2900',
+    postalcode: 'H3T 1J4',
+    province: 'QC',
+    type: '',
+    street: 'Boulevard Edouard-Montpetit',
+    city: 'Montral' 
 }
 */
 
